@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="./wrd_files/script.js "></script>
+    <link rel="stylesheet" href="./wrd_files/stilovi.css">
+
+
+    <title>WRD ispit</title>
+
+</head>
+
+<body>
+
+    <nav>
+        <div style="text-align: left;font-size:30px;margin: 20px; ">
+            <a id="IzbornikDugme" onclick="show_hide();">☰</a><span>BROJ INDEXA</span>
+        </div>
+
+        <div id="Izbornik" style="clear:both;">
+            <a class=" IzbornikStavka " href="# ">Home</a>
+            <a class="IzbornikStavka " href="# ">AMF 1</a>
+            <a class="IzbornikStavka " href="# ">AMF 2</a>
+            <a class="IzbornikStavka " href="# ">AMF 3</a>
+            <a class="IzbornikStavka " href="# ">AMF 4</a>
+            <a class="IzbornikStavka " href="# ">AMF 5</a>
+        </div>
+    </nav>
+
+
+    <div id="wrapper">
+
+        <div>
+            <h1>Iznajmljivanje nekretnine</h1>
+            <hr />
+        </div>
+        <br>
+        <label>Odaberite vilu</label>
+        <div class="Kontejner">
+            <div class="VilaKolonaWrapper">
+                <img class="VilaKolonaOkvir" id="slika1" src="./wrd_files/team2.jpg " onclick="klik1('slika1');" />
+                <h3>Villa Mostar</h3>
+                <h4>100 KM po danu</h4>
+                <p class="VilaOpis">Villa u odlicnom stanju. Na klizistu, nije puno presla. Uskoro u centru Mostara</p>
+            </div>
+
+            <div class="VilaKolonaWrapper">
+                <img class="VilaKolonaOkvir" id="slika2" src="./wrd_files/team1.jpg " onclick="klik1('slika2');" />
+                <h3>Villa Buna - Blagaj</h3>
+                <h4>120 KM po danu</h4>
+                <p class="VilaOpis">Odlicna za inznajmljivanje turistima i odlicnim studentima.</p>
+            </div>
+
+            <div class="VilaKolonaWrapper">
+                <img class="VilaKolonaOkvir" id="slika3" src="./wrd_files/team3.jpg " onclick="klik1('slika3');" />
+                <h3>Villa Vlašić</h3>
+                <h4>130 KM po danu</h4>
+                <p class="VilaOpis">Buduće kancelarije FIT-a. Iskreno se nadamo.</p>
+            </div>
+        </div>
+        <!-- <div class="Kontejner">
+            </div> -->
+        <div class="clr">
+        </div>
+        <form id="forma">
+            <label for="dostavaIme ">Ime</label>
+            <input id="dostavaIme" placeholder="kupac ime " onblur="ValidacijaIme('dostavaIme');" />
+
+            <label for="dostavaAdresa ">Adresa</label>
+            <input id="dostavaAdresa" placeholder="kupac adresa " onblur="ValidacijaAdresa('dostavaAdresa');" />
+
+            <label for="dostavaPostanskiBroj ">Poštanski broj</label>
+            <input id="dostavaPostanskiBroj" value="" onblur="ValidacijaPostanskiBroj('dostavaPostanskiBroj');" />
+
+            <label for="dostavaTelefon ">Telefon</label>
+            <input id="dostavaTelefon" placeholder="+387-61-888-8888 " onblur="ValidacijaTelefon('dostavaTelefon');" />
+
+            <label for="napomena ">Napomena</label>
+            <textarea id="napomena " style="width: 100% "></textarea>
+            <br/>
+            <input type="button" id="dugme" onclick="Dodaj()" value="Dodaj kupca " />
+        </form>
+        <label for="filtiranje ">Filtriraj podatke po imenu</label>
+        <input id="filtiranje " placeholder="upisi dio imena " />
+        <table id="tabelaID" border="1px " style="width: 100% ">
+            <tdead>
+                <tr>
+                    <th>Id Kupca</th>
+                    <th>Datum</th>
+                    <th>Ime</th>
+                    <th>Adresa</th>
+                    <th>Poštanski broj</th>
+                    <th>Telefon</th>
+                    <th>Napomena</th>
+                </tr>
+            </tdead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <div id="copy">
+            <p>Copyright by FIT</p>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./wrd_files/script.js "></script>
+</body>
+
+</html>

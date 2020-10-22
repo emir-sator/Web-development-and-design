@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fast food</title>
+    <link rel="stylesheet" href="../css/stil.css">
+    <script src="../js/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body onload="hide()">
+
+    <div id="navresponsive">
+        <div id="divlogoresponsive">
+            <img src="../Slike/slika11.png">
+        </div>
+        <p>Fast food Merak d.o.o Konjic</p>
+        <a href="#" class="menu-icon" id="dugmeID" onclick="klik()">
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+        </a>
+    </div>
+
+    <div id="gornji">
+
+
+        <ul id="lista">
+
+            <li><a href="#pocetna">Pocetna </a> </li>
+            <li><a href="#cjenovnik">Cjenovnik</a></li>
+            <li><a href="#">Dostava</a></li>
+            <li><a href="#">Galerija</a></li>
+            <li id="parent" onclick="klik1()">
+                <a href="#">O nama</a>
+
+                <div id="child">
+                    <a href="#">Kontakt</a>
+                    <a href="#">Historija </a>
+                    <a href="#">Događaji </a>
+                </div>
+            </li>
+        </ul>
+
+
+
+
+
+    </div>
+
+
+    <div id="pocetna"></div>>
+    <div id="divv">
+        <div id="div1">
+            <img src="../Slike/slika5.jpg" alt="" id="lijevaslika">
+        </div>
+
+
+        <div id="div2">
+            <span id="span1">
+                Hamburger je vrsta sendviča u okruglom pecivu, a ista riječ može se upotrijebiti i za kosani odrezak od
+                goveđeg mesa koji se najčešće stavlja u pecivo prilikom izrade takvog sendviča.
+                Mesnom odresku, koji je osnovni sastojak hamburgera, obično se pridodaje povrće poput zelene salate, luka i
+                kiselih krastavaca, te razni umaci poput kečapa, gorušice ili majoneze, a popularni su i hamburgeri u kojima se ranije spomenutim sastojcima pridodaje
+                i nekoliko krišaka sira. Hamburger sa sirom još se naziva i cheeseburger, budući da na engleskom jeziku "cheese" znači sir.
+                Danas mnogi restorani brze hrane upravo na hamburgerima temelje većinu svoje prodaje, a često ih poslužuju u menijima
+                s pomfritom ili nekim sličnim prilozima.
+                <img src="../Slike/slika2.jpg" alt="" id="Slika2">
+                Postoje mnoge suprostavljene teorije o podrijetlu imena.
+                Jedna od teorija nastanka imena je da su hamburgeri dobili ime po njemačkom gradu Hamburgu, gdje je bilo uobičajeno staviti pečenu svinjetinu u klipić,
+                a još jedna teorija govori da su se u Hamburgu komadići mesa slični odrescima u današnjim hamburgerima posluživali zajedno s okruglim pecivima.
+                Riječ "Hamburger" u njemačkom se jeziku inače još može odnositi i na stanovnika Hamburga ili nešto što pripada Hamburgu.
+
+                <img src="../Slike/slika3.jpg" alt="" id="Slika3">
+                Big Mac (hrv.: "Veliki Mac") je hamburger koji proizvodi kompanija McDonald's te prodaje u svojim restoranima brze hrane. Sastoji se od dva komada govedine (od po 45,4 g),
+                američkog sira, umaka za salatu tisuća otoka, zelene salate, krastavca i tri komada krušne lepinje. Prvi put je uveden 1967. godine u Pittsburghu i sa vremenom je postao najpopularniji od svih McDonald'sovih proizvoda
+                Big Mac se zbog svoje popularnosti i raširenosti po svijetu često koristi kao svojevrsni simbol kapitalizma. Časopis Economist ga je koristio kao glavnu referencu za troškove života u pojedinim
+                zemljama - tzv. Big Mac Index.
+
+            </span>
+
+        </div>
+
+    </div>
+    <div id="clr"></div>
+
+
+
+
+    <div id="cjenovnik">
+
+        <div id="forma">
+
+
+
+            <form action="" id="formaa" onsubmit="return false;">
+                <fieldset>
+                    <legend align="center"> CJENOVNIK </legend>
+                    <div id="lijevidioforme">
+
+                        <label class='checkboxLabel'>
+                            <input type="checkbox" name="izbor" value="V1" /> Pileći veliki Ters sendvič - 4.00KM <br>
+                            (pecivo, piletina, sir, salata, paradajz, sos)
+                        </label><br>
+                        <label class='checkboxLabel'>
+                            <input type="checkbox" name="izbor" value="V2" />Pileći mali Ters sendvič - 3.00KM<br>
+                            (pecivo, piletina, sir, salata, paradajz, sos)
+                        </label><br />
+                        <label class='checkboxLabel'>
+                            <input type="checkbox" name="izbor" value="V3" />Pileći Merak sendvič - 3.00KM<br>
+                            (pecivo, piletina, salata, paradajz, sos)
+                        </label><br />
+                        <label class='checkboxLabel'>
+                            <input type="checkbox" name="izbor" value="V4" />Pileće filete-velike - 5.00KM<br>
+                            (lepina, pileći fileti, dodaci)
+                        </label><br />
+                        <label class='checkboxLabel'>
+                            <input type="checkbox" name="izbor" value="V5" />Pileće filete-male - 2.50KM<br>
+                            (lepina, pileći fileti, dodaci)
+                        </label><br />
+                        <label class='checkboxLabel'>
+                            <input type="checkbox" name="izbor" value="V6" />GURMANSKI sendvič - 3.00KM<br>
+                            (pecivo, suho meso, jaja, mlječni namaz, salata, paradajz)
+                        </label><br />
+                        <label class='checkboxLabel'>
+                            <input type="checkbox" name="izbor" value="V7" />Kobasice - 2.00KM<br>
+                            (pecivo, kobasice, salata, paradajz, sos)
+                        </label><br />
+
+
+
+
+                    </div>
+                    <div id="desnidioforme">
+
+                        <label class='checkboxLabel'>
+                            <input type="checkbox" name="izbor" value="V8" />Pileći Normala sendvič - 2.00KM<br>
+                            (pecivo, piletina, salata, paradajz, sos)
+                        </label><br>
+                        <label class='checkboxLabel'>
+                            <input type="checkbox" name="izbor" value="V9" />Pileća Zgodnica salata - 4.00KM<br>
+                            (pecivo, salata, paradajz, krastavac, sos)
+                        </label><br />
+                        <label class='checkboxLabel'>
+                            <input type="checkbox" name="izbor" value="V10" />RAMSTEK sendvič - 4.00KM<br>
+                            (pecivo, ramstek, mlječni namaz, salata, paradajz)
+                        </label><br />
+                        <label class='checkboxLabel'>
+                            <input type="checkbox" name="izbor" value="V11" />Hamburger - 3.00KM<br>
+                            (pecivo, pljeskavica, salata, paradajz, sos)
+                        </label><br />
+                        <label class='checkboxLabel'>
+                            <input type="checkbox" name="izbor" value="V12" />Cheeseburger - 3.50KM<br>
+                            (pecivo, pljeskavica, sir, paradajz, sos)
+                        </label><br />
+                        <label class='checkboxLabel'>
+                            <input type="checkbox" name="izbor" value="V13" />Chicken burger  - 2.00KM<br>
+                            (pecivo, pileća pljeskavica, salata, paradajz, sos)
+                        </label><br />
+                        <label class='checkboxLabel'>
+                            <input type="checkbox" name="izbor" value="V14" />Školski sendvič - 2.00KM<br>
+                            (pecivo, sir, salama/sudžuka, mlječni namaz, sos)
+                        </label><br />
+
+                    </div>
+                    <div id="divButton">
+                        <a id="linkZaNaruci" href="#donji" onclick="izracunajUkupno()">NARUČI </a>
+                    </div>
+
+
+
+        </div>
+        </fieldset>
+        </form>
+    </div>
+
+
+
+
+    <div id="donji">
+
+
+
+        <div id="left">
+            <p>Unesite validne podatke za dostavu</p>
+            <form action="" id="Forma2">
+
+                <label> Ime:</label> <input id="Ime" type="text" class="inp_prijava" required>
+                <label> Prezime:</label> <input id="Prezime" type="text" class="inp_prijava" required>
+                <label>Adresa:</label><input id="Adresa" type="text" class="inp_prijava" required>
+                <label>Telefon:</label><input id="Telefon" type="text" class="inp_prijava" required>
+                <div id="UkupnoDiv">
+
+                </div>
+                <input type="submit" value="Potvrdi" id="Spremi" onclick="snimiPodatke()">
+                </label>
+
+            </form>
+        </div>
+
+        <div id="desni">
+            <marquee behavior="scroll" direction="left"> Kliknite na logo za našu facebook stranicu</marquee>
+            <button id="desni_btn" on>
+                <a href="https://www.facebook.com/MERAKfastfood/" target="_blank"> <img src="../Slike/slika11.png" id="logo" alt=""></a>
+
+
+            </button>
+
+        </div>
+
+    </div>
+    <div id="clr"></div>
+    <div id="footer">
+
+        <p>Copyright © 2019: <a href="https://www.facebook.com/Barcaaaaa4ever" target="_blank">Šator Emir</a></p>
+        <br>
+    </div>
+
+
+
+
+</body>
+
+</html>

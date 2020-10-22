@@ -1,0 +1,146 @@
+    .error {
+        border: 1px solid red;
+    }
+    
+    * {
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav {
+        width: 30%;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        background-color: rgb(28, 95, 195);
+        color: white;
+        height: 100%;
+    }
+    
+    h1 {
+        font-size: 60px;
+    }
+    
+    #IzbornikDugme {
+        display: none;
+    }
+    
+    #Izbornik a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 8px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-weight: bold;
+    }
+    
+    #Izbornik a:hover {
+        background-color: rgb(55, 125, 230);
+    }
+    
+    #wrapper {
+        position: fixed;
+        height: 100%;
+        margin-left: 30.1%;
+        width: 70%;
+        overflow: scroll;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .VilaKolonaWrapper {
+        width: 33%;
+        float: left;
+        padding: 10px;
+        margin-right: 3px;
+    }
+    
+    hr {
+        width: 8%;
+        margin: 0;
+    }
+    
+    .VilaKolonaWrapper img {
+        width: 100%;
+    }
+    
+    .VilaKolonaWrapper img:hover {
+        opacity: 0.8;
+    }
+    
+    input {
+        width: 100%;
+        height: 35px;
+        margin-bottom: 20px;
+    }
+    
+    #dugme {
+        margin-top: 5px;
+        font-size: 17px;
+        height: 40px;
+        background-color: rgb(221, 221, 221);
+    }
+    
+    .VilaKolonaWrapper h3,
+    h4,
+    p {
+        text-align: center;
+    }
+    
+    .clr {
+        clear: both;
+    }
+    
+    #copy p {
+        text-align: left;
+    }
+    
+    @media only screen and (max-width:600px) {
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: scroll;
+        }
+        nav {
+            width: 100%;
+            position: relative;
+            margin-top: -20px;
+            padding: 20px 20px 0 20px;
+        }
+        h1 {
+            padding: 0;
+            margin: 0;
+        }
+        #IzbornikDugme {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        #Izbornik {
+            display: none;
+            text-align: center;
+            padding-bottom: 8px;
+        }
+        #Izbornik a {
+            border-bottom: 1.5px solid rgb(70, 124, 205);
+        }
+        #wrapper {
+            width: 100%;
+            margin: 0;
+            padding: 25px;
+            position: relative;
+            overflow: hidden;
+        }
+        .VilaKolonaWrapper {
+            width: 100%;
+        }
+        .VilaKolonaWrapper img {
+            width: 100%;
+        }
+    }
