@@ -106,7 +106,7 @@ h2 {
     width: 100%;
 }
 
-h1 {
+#slikamoja h1 {
     color: white;
     font-size: 40px;
     float: right;
@@ -115,3 +115,99 @@ h1 {
     margin-top: 13%;
     margin-right: 2%;
 }
+
+input {
+    font-size: 13px;
+    height: 25px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 400px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    color: black;
+    background: rgba(0,0,0,0);
+    opacity: 0.5;
+    transition: 0.2s ease;
+  }
+  
+  input:focus {
+    outline: none;
+    opacity: 1;
+  }
+  
+  .form {
+      border:1px solid red;
+      width: 400px;
+      margin-left: 35%;
+      margin-right: auto;
+      margin-top: 16%;
+  }
+  .form h1 {
+    display: block;
+    margin: 0 0 45px 0;
+    color: black;
+    font-weight: 200;
+    font-size: 18px;
+  }
+  label {
+    color: black; 
+    font-weight: bold;
+    font-size: 17px;
+    
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 8px;
+    opacity: 0.5;
+    transition: 0.2s ease all; 
+    -webkit-transition: 0.2s ease all;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .group { 
+    position: relative; 
+    margin-bottom: 25px; 
+  }
+  /* active state */
+  input:focus ~ label, input:valid ~ label 		{
+    top: -10px;
+    font-size: 12px;
+    color: white;
+    opacity: 1;
+  }
+  
+  .highlight {
+    position: absolute;
+    height: 60%; 
+    width: 100px; 
+    top: 25%; 
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  a.send-btn {
+    position: absolute;
+    float: right;
+    right:39.5%;
+    color: black;
+    transition: 0.2s ease;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    
+  }
+  
+  a.send-btn:hover {
+    color: #FAFAFA;
+    cursor: pointer;
+  }
+  #contactSlika{
+      position: absolute;
+      width: 60%;
+      height: 70%;
+      margin-left: 5%;
+      margin-top: 2%;
+      
+  }
+  #contactSlika img{
+      width: 100%;
+  }
